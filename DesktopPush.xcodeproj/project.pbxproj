@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		257EC66708D98AE096C317EE /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1F06AD051A9A62B56DF39 /* LocalStore.swift */; };
+		2F2C8D22EFD2F86D9825E684 /* MacRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94A8971BA35F35F9B68610E /* MacRootView.swift */; };
+		33B7B9CF4E8CB06AE7A6BA20 /* SenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E352D18E674937817993CF9 /* SenderModel.swift */; };
+		39AC10345BD17C14E3D4782D /* NotificationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90631543DD57572E53BF89A3 /* NotificationHistory.swift */; };
+		474381985B3961DF76CEE51A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC747383CF744D20233EA59A /* NotificationService.swift */; };
+		56DE5B24D81A12517D0735F5 /* libDesktopPushSharedMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804075882DCA715CD21B3A23 /* libDesktopPushSharedMac.a */; };
+		57AF3306D6EC0EA9FBE33213 /* DesktopPushNotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E6B21BCBB1773C8A575A0E72 /* DesktopPushNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AD3A07CA6CD3A25A1935261 /* libDesktopPushSharediOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E408AFF30C9F88793717A /* libDesktopPushSharediOS.a */; };
+		74AF299BA5408F757FB7E311 /* ConfigurationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227549D71ED8D94032C60066 /* ConfigurationViews.swift */; };
+		82A2C39EF63F4A7D2CEE58F2 /* APNSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFF122EE827E98B8C043859 /* APNSClient.swift */; };
+		83852ED7CBC99009B32300DF /* libDesktopPushSharediOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E408AFF30C9F88793717A /* libDesktopPushSharediOS.a */; };
+		88CAAD0F73E5A16877813FEB /* NotificationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954574AC302D0F60B52A81DE /* NotificationHistoryView.swift */; };
+		90E22293884509C9CEF63DF5 /* DesktopPushCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE357641E77920D97B5C40F /* DesktopPushCLI.swift */; };
+		952E945D7D9B198198D7865D /* libDesktopPushSharedMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804075882DCA715CD21B3A23 /* libDesktopPushSharedMac.a */; };
+		A5CD478FF97B5339A74A407B /* DesktopPushMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5442097F44C5D828E03A7629 /* DesktopPushMacApp.swift */; };
+		A80E84EF95D6E38EF87A4FE5 /* CertificateVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FC17DAB989C9C1148551C6 /* CertificateVault.swift */; };
+		B01F6AD45769A35F0158F29A /* PushModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08191F39A04DA7CECABA6E /* PushModels.swift */; };
+		CF8F4DB046C973BAB5B1255A /* NotificationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90631543DD57572E53BF89A3 /* NotificationHistory.swift */; };
+		D0CF50016359BDF4E3BCABC8 /* ReceiverAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4ED9140D0FA60C4AFDD49 /* ReceiverAppDelegate.swift */; };
+		EADE06E4A563517EC265BB9C /* PushModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E08191F39A04DA7CECABA6E /* PushModels.swift */; };
+		EDAD955BC47DB367C53FFC11 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1F06AD051A9A62B56DF39 /* LocalStore.swift */; };
+		F4706B41F74EA72688B9828C /* APNSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFF122EE827E98B8C043859 /* APNSClient.swift */; };
+		F75A82DC8979BDA0EAE98C7E /* DesktopPushiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD455CDF19C20281132949E2 /* DesktopPushiOSApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CECFB8FC6E8BD1E668A83D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7C5536CE6BA30057858963;
+			remoteInfo = DesktopPushSharedMac;
+		};
+		4DD0E8ACDD0FCCBA5AB07AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F884B8497EB0FD086AAB2454;
+			remoteInfo = DesktopPushSharediOS;
+		};
+		6665BD4A27FF8D8EDD25F252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9B6AE00EA79567E99006D0B;
+			remoteInfo = DesktopPushNotificationService;
+		};
+		E8B001A095D5DB6E60E91AED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F884B8497EB0FD086AAB2454;
+			remoteInfo = DesktopPushSharediOS;
+		};
+		F292C45E3BF12707473F8B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7C5536CE6BA30057858963;
+			remoteInfo = DesktopPushSharedMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4103D712BA8DCE244D79209A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57AF3306D6EC0EA9FBE33213 /* DesktopPushNotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07C4ED9140D0FA60C4AFDD49 /* ReceiverAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverAppDelegate.swift; sourceTree = "<group>"; };
+		227549D71ED8D94032C60066 /* ConfigurationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViews.swift; sourceTree = "<group>"; };
+		30A1F06AD051A9A62B56DF39 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		31FC17DAB989C9C1148551C6 /* CertificateVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateVault.swift; sourceTree = "<group>"; };
+		4E352D18E674937817993CF9 /* SenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderModel.swift; sourceTree = "<group>"; };
+		5442097F44C5D828E03A7629 /* DesktopPushMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPushMacApp.swift; sourceTree = "<group>"; };
+		5706F900121033DBD8D6ADF1 /* DesktopPushiOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DesktopPushiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B997A38F5F8AB978B274B1 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		7DFF122EE827E98B8C043859 /* APNSClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSClient.swift; sourceTree = "<group>"; };
+		804075882DCA715CD21B3A23 /* libDesktopPushSharedMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDesktopPushSharedMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E08191F39A04DA7CECABA6E /* PushModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushModels.swift; sourceTree = "<group>"; };
+		90631543DD57572E53BF89A3 /* NotificationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHistory.swift; sourceTree = "<group>"; };
+		954574AC302D0F60B52A81DE /* NotificationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHistoryView.swift; sourceTree = "<group>"; };
+		AC50B9ACB38D6FACA4667611 /* desktoppush */ = {isa = PBXFileReference; includeInIndex = 0; path = desktoppush; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0E408AFF30C9F88793717A /* libDesktopPushSharediOS.a */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = archive.ar; path = libDesktopPushSharediOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE357641E77920D97B5C40F /* DesktopPushCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPushCLI.swift; sourceTree = "<group>"; };
+		CD455CDF19C20281132949E2 /* DesktopPushiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPushiOSApp.swift; sourceTree = "<group>"; };
+		D3F2A73E61D692B22947443B /* DesktopPushMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopPushMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B21BCBB1773C8A575A0E72 /* DesktopPushNotificationService.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DesktopPushNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94A8971BA35F35F9B68610E /* MacRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRootView.swift; sourceTree = "<group>"; };
+		EC747383CF744D20233EA59A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E7C110B4DD9D4357FE5F33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83852ED7CBC99009B32300DF /* libDesktopPushSharediOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7945568FFE1B74E1CA3DE0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD3A07CA6CD3A25A1935261 /* libDesktopPushSharediOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826981FD1FCA06B9685B656E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952E945D7D9B198198D7865D /* libDesktopPushSharedMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87346CAB942C2C46EE822A12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DE5B24D81A12517D0735F5 /* libDesktopPushSharedMac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162A8D4085AC0B0D3B4B144D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CD455CDF19C20281132949E2 /* DesktopPushiOSApp.swift */,
+				954574AC302D0F60B52A81DE /* NotificationHistoryView.swift */,
+				07C4ED9140D0FA60C4AFDD49 /* ReceiverAppDelegate.swift */,
+			);
+			name = iOS;
+			path = Sources/iOS;
+			sourceTree = "<group>";
+		};
+		37985E6BA2F793392E4539B3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7DFF122EE827E98B8C043859 /* APNSClient.swift */,
+				30A1F06AD051A9A62B56DF39 /* LocalStore.swift */,
+				90631543DD57572E53BF89A3 /* NotificationHistory.swift */,
+				8E08191F39A04DA7CECABA6E /* PushModels.swift */,
+			);
+			name = Shared;
+			path = Sources/Shared;
+			sourceTree = "<group>";
+		};
+		47146E16E51F22C31B344675 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				31FC17DAB989C9C1148551C6 /* CertificateVault.swift */,
+				227549D71ED8D94032C60066 /* ConfigurationViews.swift */,
+				5442097F44C5D828E03A7629 /* DesktopPushMacApp.swift */,
+				E94A8971BA35F35F9B68610E /* MacRootView.swift */,
+				4E352D18E674937817993CF9 /* SenderModel.swift */,
+			);
+			name = Mac;
+			path = Sources/Mac;
+			sourceTree = "<group>";
+		};
+		4AA0FB22685501F32C29FC1E = {
+			isa = PBXGroup;
+			children = (
+				D8C024736CA67ABB1DA8BDCE /* CLI */,
+				A8C18682772AB13330E59F81 /* Configuration */,
+				E0E1370E6B34896FD2117B31 /* iOS */,
+				162A8D4085AC0B0D3B4B144D /* iOS */,
+				8FA0A4B902B7EB418D025F46 /* Mac */,
+				47146E16E51F22C31B344675 /* Mac */,
+				926B586B76C7F702E06056BB /* NotificationService */,
+				37985E6BA2F793392E4539B3 /* Shared */,
+				77E5D02F2A195A79A5F2B4EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77E5D02F2A195A79A5F2B4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC50B9ACB38D6FACA4667611 /* desktoppush */,
+				5706F900121033DBD8D6ADF1 /* DesktopPushiOS.app */,
+				D3F2A73E61D692B22947443B /* DesktopPushMac.app */,
+				E6B21BCBB1773C8A575A0E72 /* DesktopPushNotificationService.appex */,
+				BA0E408AFF30C9F88793717A /* libDesktopPushSharediOS.a */,
+				804075882DCA715CD21B3A23 /* libDesktopPushSharedMac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA0A4B902B7EB418D025F46 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mac;
+			path = Resources/Mac;
+			sourceTree = "<group>";
+		};
+		926B586B76C7F702E06056BB /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				EC747383CF744D20233EA59A /* NotificationService.swift */,
+			);
+			name = NotificationService;
+			path = Sources/NotificationService;
+			sourceTree = "<group>";
+		};
+		A8C18682772AB13330E59F81 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				61B997A38F5F8AB978B274B1 /* Signing.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D8C024736CA67ABB1DA8BDCE /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				BDE357641E77920D97B5C40F /* DesktopPushCLI.swift */,
+			);
+			name = CLI;
+			path = Sources/CLI;
+			sourceTree = "<group>";
+		};
+		E0E1370E6B34896FD2117B31 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iOS;
+			path = Resources/iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25B4E67E6DC32EBCBA714FB2 /* desktoppush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB119B848623EE8A9E6D10B /* Build configuration list for PBXNativeTarget "desktoppush" */;
+			buildPhases = (
+				1D2FD780A276C017771FB634 /* Sources */,
+				826981FD1FCA06B9685B656E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81A53B62F2ED54F477A71B70 /* PBXTargetDependency */,
+			);
+			name = desktoppush;
+			packageProductDependencies = (
+			);
+			productName = desktoppush;
+			productReference = AC50B9ACB38D6FACA4667611 /* desktoppush */;
+			productType = "com.apple.product-type.tool";
+		};
+		BD7C5536CE6BA30057858963 /* DesktopPushSharedMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D2874C177741E9E63AF4137 /* Build configuration list for PBXNativeTarget "DesktopPushSharedMac" */;
+			buildPhases = (
+				7E587BDDEE6AA83A03B19476 /* Sources */,
+				5FA4FAE72A436EB5EB4C0646 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesktopPushSharedMac;
+			packageProductDependencies = (
+			);
+			productName = DesktopPushSharedMac;
+			productReference = 804075882DCA715CD21B3A23 /* libDesktopPushSharedMac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE9DF6F09C7CBB4A8B4A3371 /* DesktopPushMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF8C83196B381EDAD55B559 /* Build configuration list for PBXNativeTarget "DesktopPushMac" */;
+			buildPhases = (
+				681C7CC7A78DD7E60EFD328F /* Sources */,
+				87346CAB942C2C46EE822A12 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E231626F0C83652CA85BFB83 /* PBXTargetDependency */,
+			);
+			name = DesktopPushMac;
+			packageProductDependencies = (
+			);
+			productName = DesktopPushMac;
+			productReference = D3F2A73E61D692B22947443B /* DesktopPushMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9B6AE00EA79567E99006D0B /* DesktopPushNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9BAD8CD9400947D03E81417 /* Build configuration list for PBXNativeTarget "DesktopPushNotificationService" */;
+			buildPhases = (
+				793D5C11F4AF8F6963A9FBC5 /* Sources */,
+				7945568FFE1B74E1CA3DE0E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8437869DC26F78A4F2AB956 /* PBXTargetDependency */,
+			);
+			name = DesktopPushNotificationService;
+			packageProductDependencies = (
+			);
+			productName = DesktopPushNotificationService;
+			productReference = E6B21BCBB1773C8A575A0E72 /* DesktopPushNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DE3DE17BE3D7C827A9AE8FAD /* DesktopPushiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D9C7286170F6DF2F9B193F /* Build configuration list for PBXNativeTarget "DesktopPushiOS" */;
+			buildPhases = (
+				D426FABDA419B8F88FA1FE07 /* Sources */,
+				4E7C110B4DD9D4357FE5F33C /* Frameworks */,
+				4103D712BA8DCE244D79209A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2D21173288858F50736367D /* PBXTargetDependency */,
+				C9F040E83089B4052F473AAA /* PBXTargetDependency */,
+			);
+			name = DesktopPushiOS;
+			packageProductDependencies = (
+			);
+			productName = DesktopPushiOS;
+			productReference = 5706F900121033DBD8D6ADF1 /* DesktopPushiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F884B8497EB0FD086AAB2454 /* DesktopPushSharediOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35F66B67B324863D1F5E2ED5 /* Build configuration list for PBXNativeTarget "DesktopPushSharediOS" */;
+			buildPhases = (
+				DB038A046FD7E1FD21A59185 /* Sources */,
+				317D50771F3D0C95EABE915D /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesktopPushSharediOS;
+			packageProductDependencies = (
+			);
+			productName = DesktopPushSharediOS;
+			productReference = BA0E408AFF30C9F88793717A /* libDesktopPushSharediOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F1EE1BFE2ABFE3E8CE8102D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					CE9DF6F09C7CBB4A8B4A3371 = {
+						DevelopmentTeam = "$(LOCAL_DEVELOPMENT_TEAM)";
+						ProvisioningStyle = Automatic;
+					};
+					D9B6AE00EA79567E99006D0B = {
+						DevelopmentTeam = "$(LOCAL_DEVELOPMENT_TEAM)";
+						ProvisioningStyle = Automatic;
+					};
+					DE3DE17BE3D7C827A9AE8FAD = {
+						DevelopmentTeam = "$(LOCAL_DEVELOPMENT_TEAM)";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD3673A75C3E78BC47896616 /* Build configuration list for PBXProject "DesktopPush" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4AA0FB22685501F32C29FC1E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 77E5D02F2A195A79A5F2B4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD7C5536CE6BA30057858963 /* DesktopPushSharedMac */,
+				F884B8497EB0FD086AAB2454 /* DesktopPushSharediOS */,
+				CE9DF6F09C7CBB4A8B4A3371 /* DesktopPushMac */,
+				DE3DE17BE3D7C827A9AE8FAD /* DesktopPushiOS */,
+				D9B6AE00EA79567E99006D0B /* DesktopPushNotificationService */,
+				25B4E67E6DC32EBCBA714FB2 /* desktoppush */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		317D50771F3D0C95EABE915D /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		5FA4FAE72A436EB5EB4C0646 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D2FD780A276C017771FB634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E22293884509C9CEF63DF5 /* DesktopPushCLI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681C7CC7A78DD7E60EFD328F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80E84EF95D6E38EF87A4FE5 /* CertificateVault.swift in Sources */,
+				74AF299BA5408F757FB7E311 /* ConfigurationViews.swift in Sources */,
+				A5CD478FF97B5339A74A407B /* DesktopPushMacApp.swift in Sources */,
+				2F2C8D22EFD2F86D9825E684 /* MacRootView.swift in Sources */,
+				33B7B9CF4E8CB06AE7A6BA20 /* SenderModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793D5C11F4AF8F6963A9FBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474381985B3961DF76CEE51A /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E587BDDEE6AA83A03B19476 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A2C39EF63F4A7D2CEE58F2 /* APNSClient.swift in Sources */,
+				EDAD955BC47DB367C53FFC11 /* LocalStore.swift in Sources */,
+				CF8F4DB046C973BAB5B1255A /* NotificationHistory.swift in Sources */,
+				EADE06E4A563517EC265BB9C /* PushModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D426FABDA419B8F88FA1FE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75A82DC8979BDA0EAE98C7E /* DesktopPushiOSApp.swift in Sources */,
+				88CAAD0F73E5A16877813FEB /* NotificationHistoryView.swift in Sources */,
+				D0CF50016359BDF4E3BCABC8 /* ReceiverAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB038A046FD7E1FD21A59185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4706B41F74EA72688B9828C /* APNSClient.swift in Sources */,
+				257EC66708D98AE096C317EE /* LocalStore.swift in Sources */,
+				39AC10345BD17C14E3D4782D /* NotificationHistory.swift in Sources */,
+				B01F6AD45769A35F0158F29A /* PushModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81A53B62F2ED54F477A71B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7C5536CE6BA30057858963 /* DesktopPushSharedMac */;
+			targetProxy = F292C45E3BF12707473F8B18 /* PBXContainerItemProxy */;
+		};
+		B8437869DC26F78A4F2AB956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F884B8497EB0FD086AAB2454 /* DesktopPushSharediOS */;
+			targetProxy = E8B001A095D5DB6E60E91AED /* PBXContainerItemProxy */;
+		};
+		C9F040E83089B4052F473AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9B6AE00EA79567E99006D0B /* DesktopPushNotificationService */;
+			targetProxy = 6665BD4A27FF8D8EDD25F252 /* PBXContainerItemProxy */;
+		};
+		E231626F0C83652CA85BFB83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7C5536CE6BA30057858963 /* DesktopPushSharedMac */;
+			targetProxy = 1CECFB8FC6E8BD1E668A83D9 /* PBXContainerItemProxy */;
+		};
+		E2D21173288858F50736367D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F884B8497EB0FD086AAB2454 /* DesktopPushSharediOS */;
+			targetProxy = 4DD0E8ACDD0FCCBA5AB07AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C99E761E91C016781ACE5C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/iOS/DesktopPushiOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/DesktopPushiOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.iOS;
+				PRODUCT_NAME = "DesktopPush Receiver";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D4724ACD7B8D94E8193F96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/iOS/DesktopPushNotificationService.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/NotificationService-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.iOS.NotificationService;
+				PRODUCT_NAME = "DesktopPush Notification Service";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		38FD76256A62948DD448AFBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/iOS/DesktopPushNotificationService.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/NotificationService-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.iOS.NotificationService;
+				PRODUCT_NAME = "DesktopPush Notification Service";
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		482582D3C2FF036F8EA2E400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/Mac/DesktopPushMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSUserNotificationUsageDescription = "DesktopPush uses notifications to report scheduled deliveries.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush;
+				PRODUCT_NAME = DesktopPush;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A0650E3E032090CBC06FD16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		4F3AA4085775DC8D4F537F8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush;
+				PRODUCT_NAME = desktoppush;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6E79305FFE6FA17813AF2742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		9439C99B799BD5FB1E683EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.Shared.macOS;
+				PRODUCT_MODULE_NAME = DesktopPushSharedMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A0126FA14D2024B0858A04B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/iOS/DesktopPushiOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Configuration/DesktopPushiOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.iOS;
+				PRODUCT_NAME = "DesktopPush Receiver";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A15FAE4535A74D9E86B7A90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush;
+				PRODUCT_NAME = desktoppush;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1EB1E7C2B8392579B00E08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.Shared.iOS;
+				PRODUCT_MODULE_NAME = DesktopPushSharediOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E11D867428C2C245A5E349B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B997A38F5F8AB978B274B1 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Resources/Mac/DesktopPushMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSUserNotificationUsageDescription = "DesktopPush uses notifications to report scheduled deliveries.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush;
+				PRODUCT_NAME = DesktopPush;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E44A487F37CB025CE4BA9324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.Shared.iOS;
+				PRODUCT_MODULE_NAME = DesktopPushSharediOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E70CBEB1326F4DA4F1EB9BF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.port21.desktoppush.Shared.macOS;
+				PRODUCT_MODULE_NAME = DesktopPushSharedMac;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BB119B848623EE8A9E6D10B /* Build configuration list for PBXNativeTarget "desktoppush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15FAE4535A74D9E86B7A90B /* Debug */,
+				4F3AA4085775DC8D4F537F8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1D2874C177741E9E63AF4137 /* Build configuration list for PBXNativeTarget "DesktopPushSharedMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70CBEB1326F4DA4F1EB9BF3 /* Debug */,
+				9439C99B799BD5FB1E683EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		35F66B67B324863D1F5E2ED5 /* Build configuration list for PBXNativeTarget "DesktopPushSharediOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44A487F37CB025CE4BA9324 /* Debug */,
+				A1EB1E7C2B8392579B00E08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5CF8C83196B381EDAD55B559 /* Build configuration list for PBXNativeTarget "DesktopPushMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				482582D3C2FF036F8EA2E400 /* Debug */,
+				E11D867428C2C245A5E349B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD3673A75C3E78BC47896616 /* Build configuration list for PBXProject "DesktopPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A0650E3E032090CBC06FD16 /* Debug */,
+				6E79305FFE6FA17813AF2742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D9BAD8CD9400947D03E81417 /* Build configuration list for PBXNativeTarget "DesktopPushNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD76256A62948DD448AFBD /* Debug */,
+				2D4724ACD7B8D94E8193F96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2D9C7286170F6DF2F9B193F /* Build configuration list for PBXNativeTarget "DesktopPushiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C99E761E91C016781ACE5C9 /* Debug */,
+				A0126FA14D2024B0858A04B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F1EE1BFE2ABFE3E8CE8102D /* Project object */;
+}

@@ -3,6 +3,13 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 *.DS_Store
+*.p12
+.env
+*.p8
+*.pem
+*.key
+*.mobileprovision
+Configuration/LocalSigning.xcconfig
 
 ## User settings
 xcuserdata/

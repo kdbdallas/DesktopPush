@@ -1,0 +1,123 @@
+name: DesktopPush
+options:
+  bundleIdPrefix: com.port21
+  deploymentTarget:
+    iOS: "18.0"
+    macOS: "15.0"
+  xcodeVersion: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    GENERATE_INFOPLIST_FILE: YES
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0
+targets:
+  DesktopPushSharedMac:
+    type: library.static
+    platform: macOS
+    sources:
+      - Sources/Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush.Shared.macOS
+        PRODUCT_MODULE_NAME: DesktopPushSharedMac
+        SKIP_INSTALL: YES
+  DesktopPushSharediOS:
+    type: library.static
+    platform: iOS
+    sources:
+      - Sources/Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush.Shared.iOS
+        PRODUCT_MODULE_NAME: DesktopPushSharediOS
+        SKIP_INSTALL: YES
+  DesktopPushMac:
+    type: application
+    platform: macOS
+    configFiles:
+        Debug: Configuration/Signing.xcconfig
+        Release: Configuration/Signing.xcconfig
+    sources:
+      - Sources/Mac
+      - path: Resources/Mac
+        buildPhase: resources
+        excludes:
+          - DesktopPushMac.entitlements
+    dependencies:
+      - target: DesktopPushSharedMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush
+        PRODUCT_NAME: DesktopPush
+        CODE_SIGN_ENTITLEMENTS: Resources/Mac/DesktopPushMac.entitlements
+        INFOPLIST_KEY_NSUserNotificationUsageDescription: "DesktopPush uses notifications to report scheduled deliveries."
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+  DesktopPushiOS:
+    type: application
+    platform: iOS
+    configFiles:
+        Debug: Configuration/Signing.xcconfig
+        Release: Configuration/Signing.xcconfig
+    sources:
+      - Sources/iOS
+      - path: Resources/iOS
+        buildPhase: resources
+        excludes:
+          - DesktopPushiOS.entitlements
+          - DesktopPushNotificationService.entitlements
+    dependencies:
+      - target: DesktopPushSharediOS
+      - target: DesktopPushNotificationService
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush.iOS
+        PRODUCT_NAME: DesktopPush Receiver
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Configuration/DesktopPushiOS-Info.plist
+        CODE_SIGN_ENTITLEMENTS: Resources/iOS/DesktopPushiOS.entitlements
+  DesktopPushNotificationService:
+    type: app-extension
+    platform: iOS
+    configFiles:
+        Debug: Configuration/Signing.xcconfig
+        Release: Configuration/Signing.xcconfig
+    sources:
+      - Sources/NotificationService
+    dependencies:
+      - target: DesktopPushSharediOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush.iOS.NotificationService
+        PRODUCT_NAME: DesktopPush Notification Service
+        SWIFT_STRICT_CONCURRENCY: minimal
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Configuration/NotificationService-Info.plist
+        CODE_SIGN_ENTITLEMENTS: Resources/iOS/DesktopPushNotificationService.entitlements
+  desktoppush:
+    type: tool
+    platform: macOS
+    sources:
+      - Sources/CLI
+    dependencies:
+      - target: DesktopPushSharedMac
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush
+        PRODUCT_NAME: desktoppush
+schemes:
+  DesktopPush Mac:
+    build:
+      targets:
+        DesktopPushMac: all
+        desktoppush: all
+    run:
+      config: Debug
+  DesktopPush iOS:
+    build:
+      targets:
+        DesktopPushiOS: all
+    run:
+      config: Debug
