@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		257EC66708D98AE096C317EE /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1F06AD051A9A62B56DF39 /* LocalStore.swift */; };
+		2A7F19B3CC4BEEBC73292E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8F62D840616688C99276BA /* Assets.xcassets */; };
+		2CB2C75AFCEF406DFE6C2D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63B93CA31681258D0EE6D4D /* Assets.xcassets */; };
 		2F2C8D22EFD2F86D9825E684 /* MacRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94A8971BA35F35F9B68610E /* MacRootView.swift */; };
 		33B7B9CF4E8CB06AE7A6BA20 /* SenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E352D18E674937817993CF9 /* SenderModel.swift */; };
 		39AC10345BD17C14E3D4782D /* NotificationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90631543DD57572E53BF89A3 /* NotificationHistory.swift */; };
@@ -103,9 +105,11 @@
 		BDE357641E77920D97B5C40F /* DesktopPushCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPushCLI.swift; sourceTree = "<group>"; };
 		CD455CDF19C20281132949E2 /* DesktopPushiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPushiOSApp.swift; sourceTree = "<group>"; };
 		D3F2A73E61D692B22947443B /* DesktopPushMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopPushMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63B93CA31681258D0EE6D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B21BCBB1773C8A575A0E72 /* DesktopPushNotificationService.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DesktopPushNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94A8971BA35F35F9B68610E /* MacRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRootView.swift; sourceTree = "<group>"; };
 		EC747383CF744D20233EA59A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EE8F62D840616688C99276BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 		8FA0A4B902B7EB418D025F46 /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				EE8F62D840616688C99276BA /* Assets.xcassets */,
 			);
 			name = Mac;
 			path = Resources/Mac;
@@ -245,6 +250,7 @@
 		E0E1370E6B34896FD2117B31 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E63B93CA31681258D0EE6D4D /* Assets.xcassets */,
 			);
 			name = iOS;
 			path = Resources/iOS;
@@ -295,6 +301,7 @@
 			buildConfigurationList = 5CF8C83196B381EDAD55B559 /* Build configuration list for PBXNativeTarget "DesktopPushMac" */;
 			buildPhases = (
 				681C7CC7A78DD7E60EFD328F /* Sources */,
+				645798FAB845E005A6147409 /* Resources */,
 				87346CAB942C2C46EE822A12 /* Frameworks */,
 			);
 			buildRules = (
@@ -333,6 +340,7 @@
 			buildConfigurationList = E2D9C7286170F6DF2F9B193F /* Build configuration list for PBXNativeTarget "DesktopPushiOS" */;
 			buildPhases = (
 				D426FABDA419B8F88FA1FE07 /* Sources */,
+				13579C16A183320F9D961891 /* Resources */,
 				4E7C110B4DD9D4357FE5F33C /* Frameworks */,
 				4103D712BA8DCE244D79209A /* Embed Foundation Extensions */,
 			);
@@ -413,6 +421,25 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13579C16A183320F9D961891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB2C75AFCEF406DFE6C2D1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645798FAB845E005A6147409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A7F19B3CC4BEEBC73292E24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		317D50771F3D0C95EABE915D /* Copy Swift Objective-C Interface Header */ = {
@@ -550,6 +577,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Configuration/DesktopPushiOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Desktop Push";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -620,6 +649,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/Mac/DesktopPushMac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Desktop Push";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSUserNotificationUsageDescription = "DesktopPush uses notifications to report scheduled deliveries.";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -805,6 +835,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Configuration/DesktopPushiOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Desktop Push";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -860,6 +892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Resources/Mac/DesktopPushMac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Desktop Push";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSUserNotificationUsageDescription = "DesktopPush uses notifications to report scheduled deliveries.";
 				LD_RUNPATH_SEARCH_PATHS = (

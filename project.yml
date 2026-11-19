@@ -51,7 +51,9 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush
         PRODUCT_NAME: DesktopPush
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_ENTITLEMENTS: Resources/Mac/DesktopPushMac.entitlements
+        INFOPLIST_KEY_CFBundleDisplayName: Desktop Push
         INFOPLIST_KEY_NSUserNotificationUsageDescription: "DesktopPush uses notifications to report scheduled deliveries."
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
   DesktopPushiOS:
@@ -75,6 +77,9 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.port21.desktoppush.iOS
         PRODUCT_NAME: DesktopPush Receiver
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_CFBundleDisplayName: Desktop Push
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
         GENERATE_INFOPLIST_FILE: NO
         INFOPLIST_FILE: Configuration/DesktopPushiOS-Info.plist
         CODE_SIGN_ENTITLEMENTS: Resources/iOS/DesktopPushiOS.entitlements

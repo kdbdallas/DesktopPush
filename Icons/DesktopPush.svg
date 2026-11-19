@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DesktopPush macOS application icon source. Every visual component is an editable SVG group. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>DesktopPush macOS App Icon</title>
+  <defs>
+    <linearGradient id="canvas" x1="70" y1="32" x2="958" y2="1002" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e2c83"/><stop offset=".5" stop-color="#141651"/><stop offset="1" stop-color="#080a2d"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(487 438) rotate(90) scale(532)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4059e8" stop-opacity=".46"/><stop offset="1" stop-color="#4059e8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="160" y1="350" x2="566" y2="697" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#21d9ff"/><stop offset=".46" stop-color="#2d56ed"/><stop offset="1" stop-color="#6028d8"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9fcff"/><stop offset=".4" stop-color="#b7c4df"/><stop offset=".7" stop-color="#eef3ff"/><stop offset="1" stop-color="#7d8ba9"/></linearGradient>
+    <linearGradient id="phoneScreen" x1="710" y1="332" x2="862" y2="741" gradientUnits="userSpaceOnUse"><stop stop-color="#514cf1"/><stop offset=".45" stop-color="#167ded"/><stop offset="1" stop-color="#21d4f0"/></linearGradient>
+    <linearGradient id="beam" x1="423" y1="0" x2="731" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#1de8ff" stop-opacity=".15"/><stop offset=".42" stop-color="#41deff"/><stop offset="1" stop-color="#b941ff"/></linearGradient>
+    <linearGradient id="beam2" x1="423" y1="0" x2="731" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#5567ff" stop-opacity=".1"/><stop offset=".5" stop-color="#20d4ff"/><stop offset="1" stop-color="#ef52ff"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="13"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#02031d" flood-opacity=".72"/></filter>
+  </defs>
+  <!-- Layer: opaque full-bleed canvas. Do not add transparency for macOS application PNGs. -->
+  <g id="backplate">
+    <rect width="1024" height="1024" fill="#0b0d38"/>
+    <rect x="28" y="28" width="968" height="968" rx="222" fill="#171d65"/>
+    <rect x="28" y="28" width="968" height="968" rx="222" fill="#29347e" opacity=".32"/>
+    <path d="M68 735C200 858 766 903 956 707v67c0 100-82 182-182 182H250c-100 0-182-82-182-182v-39Z" fill="#06072a" opacity=".35"/>
+  </g>
+  <!-- Layer: soft ambient glow beneath devices -->
+  <g id="ambient" opacity=".9">
+    <ellipse cx="494" cy="724" rx="331" ry="56" fill="#1e5dff" opacity=".22"/>
+    <circle cx="708" cy="500" r="112" fill="#ae45ff" opacity=".18"/>
+  </g>
+  <!-- Layer: desktop Mac -->
+  <g id="desktop-mac">
+    <path d="M143 298c0-25 20-45 45-45h355c25 0 45 20 45 45v263c0 25-20 45-45 45H188c-25 0-45-20-45-45V298Z" fill="#d5e2f7"/>
+    <rect x="164" y="278" width="403" height="302" rx="23" fill="#080b2a"/>
+    <rect x="179" y="293" width="373" height="257" rx="13" fill="#245ce8"/>
+    <path d="M179 466c84-77 192-80 373-31v115H179V466Z" fill="#2736c6" opacity=".65"/>
+    <path d="M179 498c117 24 236 0 373-95v147H179v-52Z" fill="#31d4ee" opacity=".2"/>
+    <path d="M303 606h125l-26 105h-72l-27-105Z" fill="#b4c3df"/>
+    <path d="M282 711h168c28 0 46 16 51 37H232c5-21 23-37 50-37Z" fill="#d5e2f7"/>
+    <rect x="355" y="586" width="23" height="5" rx="2.5" fill="#8291ae"/>
+  </g>
+  <!-- Layer: transmission rays, separated so a designer can recolor or remove each -->
+  <g id="push-rays">
+    <path d="M430 372c95 9 185 56 298 116-108-22-202-40-306-12 31-24 31-72 8-104Z" fill="#3adeff" opacity=".92"/>
+    <path d="M419 451c115 10 200 25 310 53-114 13-210 16-317-9 27-12 29-33 7-44Z" fill="#5b75ff" opacity=".98"/>
+    <path d="M423 529c95-17 193-21 306-9-109 26-211 50-314 93 30-32 31-60 8-84Z" fill="#bc50ff" opacity=".92"/>
+    <circle cx="725" cy="505" r="34" fill="#be53ff" opacity=".62"/>
+  </g>
+  <!-- Layer: iPhone -->
+  <g id="iphone">
+    <rect x="703" y="286" width="190" height="461" rx="48" fill="#d5e2f7"/>
+    <rect x="712" y="295" width="172" height="443" rx="40" fill="#10143d"/>
+    <rect x="724" y="311" width="148" height="411" rx="32" fill="#3667ed"/>
+    <path d="M724 575c53-46 100-61 148-78v225H724V575Z" fill="#4a30e1" opacity=".58"/>
+    <rect x="772" y="323" width="54" height="15" rx="7.5" fill="#10143d"/>
+    <circle cx="836" cy="331" r="4" fill="#28315a"/>
+  </g>
+  <!-- Layer: notification card and badge -->
+  <g id="notification">
+    <rect x="741" y="423" width="116" height="103" rx="23" fill="#eef5ff" opacity=".95"/>
+    <rect x="744" y="426" width="110" height="97" rx="20" fill="#6778ff" opacity=".94"/>
+    <path d="M799 450c-12 0-20 10-20 23v13l-7 10c-2 3 0 7 4 7h47c4 0 6-4 4-7l-7-10v-13c0-13-8-23-20-23Zm0 62c5 0 9-3 10-8h-20c1 5 5 8 10 8Z" fill="white"/>
+    <circle cx="853" cy="425" r="18" fill="white"/>
+    <circle cx="853" cy="425" r="13" fill="#fa5f87"/>
+  </g>
+  <!-- Layer: highlight -->
+  <g id="highlights" opacity=".62">
+    <path d="M151 315c9-25 24-38 48-43h335c18 0 31 6 42 20" fill="none" stroke="white" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
+    <path d="M724 336c7-18 20-28 41-31h80" fill="none" stroke="white" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
